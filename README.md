@@ -23,7 +23,6 @@
 - [Applications](#applications)
 - [Current Status](#current-status)
 - [Future Roadmap](#future-roadmap)
-- [Repository Structure](#repository-structure)
 - [Setup Guide](#setup-guide)
 - [Contributing](#contributing)
 - [Why This Matters](#why-this-matters)

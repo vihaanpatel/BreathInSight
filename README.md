@@ -1,69 +1,45 @@
-BreathInSight
+# BreathInSight
 
-A low-cost, non-invasive respiratory health monitoring device
+A low-cost, non-invasive respiratory health monitoring device that uses breath analysis to detect potential indicators of respiratory disease.
 
-Overview
+## Overview
+BreathInSight is a portable prototype designed to combine multiple sensing methods into one device. It integrates:
+- VOC sensing
+- Nitric oxide / NOx-related sensing
+- Airflow measurement
 
-BreathInSight is a portable system designed to detect early indicators of respiratory conditions (e.g., asthma, COPD, lung disease) using exhaled breath analysis.
+The goal is to create a more accessible and affordable respiratory screening tool, especially for settings where traditional diagnostics are expensive or difficult to access.
 
-The device integrates:
+## Why I Built This
+Many respiratory conditions are detected late because clinical testing can be expensive, inaccessible, or inconvenient. I wanted to build a device that could provide real-time information from a simple breath sample using a portable embedded system.
 
-VOC sensing (airborne biomarkers)
-Nitric oxide detection (inflammation indicator)
-Airflow measurement (lung function)
+## Features
+- Real-time breath measurement
+- Multi-sensor integration
+- On-device display output
+- Portable hardware architecture
+- Iterative low-cost prototype design
 
-The goal is to provide a low-cost, accessible alternative to traditional diagnostics like spirometry or CT imaging, especially in low-resource settings.
+## System Architecture
+The current prototype uses:
+- Raspberry Pi 5
+- VOC sensor
+- Flow sensor
+- OLED display
+- Portable power source
 
-Why I Built This
+## Repository Structure
+- `hardware/` – wiring diagrams, schematics, and bill of materials
+- `firmware/` – main code, sensor interfaces, and display logic
+- `docs/` – architecture, calibration, and testing notes
+- `enclosure/` – CAD and STL files
+- `media/` – photos and demo assets
 
-Respiratory diseases are often diagnosed late due to cost and accessibility barriers. I wanted to build a system that could:
+## Current Status
+- Functional prototype built
+- Sensor integration in progress
+- Calibration/testing ongoing
+- Future work includes improving reliability and refining classification logic
 
-Be used at home or in clinics without specialized equipment
-Combine multiple biomarkers into one device
-Provide real-time feedback instead of delayed lab results
-
-System Architecture
-
-Core components:
-
-Raspberry Pi 5 (processing + control)
-VOC sensor (e.g., MQ-138 / SGP41)
-Flow sensor (SFM series)
-OLED display (I2C)
-Power system (portable battery)
-
-Features:
-
-Real-time breath analysis
-Multi-sensor fusion (VOC + NOx + airflow)
-On-device risk classification
-Portable + low-cost design
-
-How It Works
-
-User exhales into the device
-Sensors collect airflow + chemical data
-Data is processed in real time
-Risk indicators are displayed on screen
-
-Tech Stack
-
-Python (data processing + sensor integration)
-I2C communication (sensor interfacing)
-Embedded systems (Raspberry Pi)
-CAD (Fusion 360 and Onshape for enclosure)
-
-Current Status
-
-Functional prototype built
-Sensor integration complete
-Calibration and accuracy improvements ongoing
-
-Next Steps
-Improve NOx sensing reliability
-Train more robust classification model
-Miniaturize hardware
-Clinical validation
-
-Author
-Vihaan Patel
+## Author
+[Your Name]

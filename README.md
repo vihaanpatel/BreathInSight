@@ -42,4 +42,4 @@ The current prototype uses:
 - Future work includes improving reliability and refining classification logic
 
 ## Author
-[Your Name]
+Vihaan Patel
